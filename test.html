@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+
+
+</head>
+
+<body>
+
+
+    <script>
+        // קלט 5,30,4
+        // פלט - 05:30:04
+
+        var hours = prompt("enter number");
+        var minets = prompt("enter number");
+        var secend = prompt("enter number");
+        var result = time(hours, minets, secend);
+        // alert(result);
+
+        function time(h, m, s) {
+            if (h < 10)
+                h = 0 + h;
+            if (m < 10)
+                m = 0 + m;
+            if (s < 10)
+                s = 0 + s;
+            alert(h + " : " + m + " : " + s);
+        }
+    </script>
+</body>
+
+</html>
